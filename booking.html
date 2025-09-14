@@ -5,8 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Appointment - Dr A Medical Wellness Centre</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <nav class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">Dr A Wellness</a>
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">Vision & Mission</a></li>
+      <li><a href="index.html">Services</a></li>
+      <li><a href="index.html">Our Team</a></li>
+      <li><a href="index.html">Gallery</a></li>
+      <li><a href="index.html">Contact</a></li>
+      <li><a href="booking.html" class="btn small">Book Now</a></li>
+    </ul>
+  </div>
+</nav>
   <main class="container">
     <h2>Book an Appointment</h2>
     <form id="appointmentForm">
@@ -59,6 +80,16 @@
         serviceDropdown.appendChild(opt);
       });
     }
+
+    const toggleBtn = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  toggleBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    toggleBtn.innerHTML = navLinks.classList.contains("show")
+      ? '<i class="fas fa-times"></i>'   // X when open
+      : '<i class="fas fa-bars"></i>';  // ☰ when closed
+  });
   </script>
 </body>
 </html>

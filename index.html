@@ -23,8 +23,13 @@
   </header>
 
   <!-- Navigation -->
-  <nav class="navbar">
-    <ul>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">Dr A Wellness</a>
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="#who">Who We Are</a></li>
       <li><a href="#vision">Vision & Mission</a></li>
       <li><a href="#services">Services</a></li>
@@ -33,7 +38,9 @@
       <li><a href="#contact">Contact</a></li>
       <li><a href="booking.html" class="btn small">Book Now</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Main -->
   <main class="container">
@@ -222,6 +229,16 @@
     modals.forEach(modal => {
       if (e.target === modal) modal.style.display = "none";
     });
+  });
+
+  const toggleBtn = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  toggleBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    toggleBtn.innerHTML = navLinks.classList.contains("show")
+      ? '<i class="fas fa-times"></i>'   // X when open
+      : '<i class="fas fa-bars"></i>';  // ☰ when closed
   });
   </script>
 </body>
