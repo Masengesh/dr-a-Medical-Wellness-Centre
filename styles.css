@@ -398,32 +398,63 @@ section {
 }
 .correction{
   display: flex;
-  justify-content:space-evenly;
-  margin: 5rem 15rem 5rem  5rem;
+  justify-content:space-around;
+  margin: 5rem 0 0 0;
+}
+.nav{
+  margin-left: -8rem;
 }
 .logo img{
   height: 10rem;
   width: 10rem;
   object-fit: cover;
-  margin-bottom: 3rem;
+  margin: 0 5rem ;
 }
 .correction ul{
   display: flex;
   flex-direction: column;
 }
-.footer .social-icons {
-  margin-top: 1rem;
+.footer .social-icons h4{
+  margin-bottom: 3rem;
+}
+.social-icons .new h4{
+  margin: 2rem 0;
+}
+.social-icons .new input{
+    height: 3rem;
+    width: 15rem;
+    background-color: #023e8a;
+    border: solid 2px #fff;
+}
+.social-icons .new button{
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  color: #023e8a;
+  background-color: #fff;
+  border:solid 2px #023e8a ;
+  font-size: 10px;
+  margin: 20px;
 }
 
 .footer .social-icons a {
   color: #fff;
-  margin: 0 10px;
+  margin: 20px 10px;
   font-size: 1.2rem;
   transition: color 0.3s;
+}
+.line{
+  width: 90%;
+  height: 2px;
+  background-color: #fff;
+  margin: 3rem 5rem;
 }
 
 .footer .social-icons a:hover {
   color: #ffd60a;
+}
+.pragraphy p{
+  margin: 3rem 1rem 0 0;
 }
 
 /* ===== Modals ===== */
