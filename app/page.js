@@ -110,7 +110,13 @@ export default function Home() {
         </div>
       </section>
 
-      
+      <section id="gallery" className="fade-in">
+        <h2>Wellness Notes</h2>
+        <div className="gallery-grid">
+          <iframe src="/wellness-note.html" width="100%" height="600" style={{border: 'none'}} title="Wellness Note"></iframe>
+        </div>
+      </section>
+
       <Testimonials />
       <Footer />
       <script dangerouslySetInnerHTML={{
