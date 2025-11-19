@@ -780,10 +780,12 @@ function Contact() {
                                     src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.743222599802!2d32.619157813174866!3d0.4269692805925654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177db139fc033ef5%3A0x59f006c217f91c24!2sKasangati%20-%20Kira%20Rd!5e1!3m2!1sen!2sug!4v1763542544397!5m2!1sen!2sug",
                                     width: "600",
                                     height: "450",
-                                    style: "border:0;",
-                                    allowfullscreen: "",
+                                    style: {
+                                        border: '0'
+                                    },
+                                    allowFullScreen: true,
                                     loading: "lazy",
-                                    referrerpolicy: "no-referrer-when-downgrade"
+                                    referrerPolicy: "no-referrer-when-downgrade"
                                 }, void 0, false, {
                                     fileName: "[project]/app/contact/page.js",
                                     lineNumber: 24,
