@@ -28,7 +28,7 @@ export default function Testimonials() {
 
   return (
     <section className="testimonials">
-      <h2>What Our Clients Say</h2>
+      <h2>What Our Clients Want</h2>
       <div className="testimonials-grid">
 
          <div className="gallery-grid">
