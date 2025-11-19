@@ -1,0 +1,29 @@
+{
+  "name": "dr-a-medical-wellness-centre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Masengesh/dr-a-Medical-Wellness-Centre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Masengesh/dr-a-Medical-Wellness-Centre/issues"
+  },
+  "homepage": "https://github.com/Masengesh/dr-a-Medical-Wellness-Centre#readme",
+  "dependencies": {
+    "next": "^16.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
