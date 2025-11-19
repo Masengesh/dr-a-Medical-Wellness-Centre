@@ -381,6 +381,13 @@ section {
   transform: scale(1.05);
 }
 
+.gallery-grid iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 12px;
+}
+
 /* ===== Contact Section ===== */
 .contact-container {
   display: grid;
@@ -606,50 +613,92 @@ section {
 }
 /* ===== Testimonials ===== */
 .testimonials {
-  padding: 3rem 0;
-  background: #fff;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .testimonials h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.testimonials h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #0077b6, #00b4d8);
+  margin: 1rem auto;
+  border-radius: 2px;
 }
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
   margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
 }
 
 .testimonial-card {
-  background: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
   text-align: left;
+  position: relative;
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 4rem;
+  color: rgba(0, 119, 182, 0.1);
+  font-family: serif;
+  line-height: 1;
 }
 
 .testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: #0077b6;
 }
 
 .testimonial-image {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border: 4px solid #0077b6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-quote {
   font-style: italic;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: #555;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  position: relative;
+  z-index: 1;
 }
 
 .testimonial-name {
-  font-weight: 600;
+  font-weight: 700;
   color: #0077b6;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }

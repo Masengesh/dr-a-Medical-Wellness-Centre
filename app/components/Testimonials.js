@@ -30,13 +30,10 @@ export default function Testimonials() {
     <section className="testimonials">
       <h2>What Our Clients Say</h2>
       <div className="testimonials-grid">
-        {testimonials.map(testimonial => (
-          <div key={testimonial.id} className="testimonial-card">
-            <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
-            <p className="testimonial-quote">"{testimonial.quote}"</p>
-            <p className="testimonial-name">- {testimonial.name}</p>
-          </div>
-        ))}
+
+         <div className="gallery-grid">
+          <iframe src="./WELLNESS NOTE -by MaxAI.html" width="100%" height="600" style={{border: 'none'}} title="Wellness Note"></iframe>
+        </div>
       </div>
     </section>
   );

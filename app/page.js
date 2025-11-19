@@ -110,20 +110,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="gallery" className="fade-in">
-        <h2>Our Work in Pictures</h2>
-        <div className="gallery-grid">
-          <img src="https://res.cloudinary.com/dspsj31q8/image/upload/v1757426757/7S5C7534_vywjte.jpg" alt="Gallery 1" />
-          <img src="https://res.cloudinary.com/dspsj31q8/image/upload/v1720281466/pexels-rdne-8052222_mpf3zl.jpg"
-            alt="Gallery 2" />
-          <img
-            src="https://res.cloudinary.com/dspsj31q8/image/upload/v1757438254/0e57afbd81a15f58a7c383f68f790cd3_xf7lwf.webp"
-            alt="Gallery 3" />
-          <img
-            src="https://res.cloudinary.com/dspsj31q8/image/upload/v1757800875/Screenshot_2025-09-14_at_00.53.57_j6oyam.png"
-            alt="Gallery 4" />
-        </div>
-      </section>
+      
       <Testimonials />
       <Footer />
       <script dangerouslySetInnerHTML={{
